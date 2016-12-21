@@ -1,0 +1,113 @@
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+     	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/form-elements.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<style type="text/css">
+	.bgimg {
+    background-image: url('http://www.noormedical.com/files/1407075016_46836.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+</style>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+<body>
+<header>
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <a href="#home" class="w3-margin-left">My Patient</a>
+    </li>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="LogoutServlet"  class="w3-left">Logout(Clerk)</a>
+      
+    </li>
+  </ul>
+</div>
+<br><br>
+</header>
+	<div class="bgimg container">
+		<form class="form-horizontal" action="showdata.jsp">
+			<div class="container">
+				<div class="form-group">
+				<br><br><br><br><br><br><br><br>
+				
+					<div class="col-md-3">
+						<input class="form-control" type="text" placeholder="First Name" name="firstname" required> 
+					</div>
+					<div class="col-md-2">
+						<input class="form-control" type="text" placeholder="Last Name" name="lastname" required>
+					</div>
+					<div class="col-md-2">
+						<input class="form-control" type="text" placeholder="Facility" name="facility">
+					</div>
+					<div class="col-md-2">
+						<input class="form-control" type="date" placeholder="Date of Admit" value="" name="dateofadmit">
+					</div>
+					
+					
+					
+					<div class="col-md-2">
+						<input class="form-control" type="date" placeholder="Date of Discharge" value="" name="dateofdischarge">
+					</div>
+					<!-- <p class="col-md-2">Date: <input type="text" id="datepicker"></p> -->
+				</div>
+<!-- <input class="form-control" type="reset" value="Reset"> -->
+			</div>
+			<br><br>
+			<div class="container">
+				<div class="form-group">
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-2">
+						
+						<input style="width: 80%" class="btn btn-success " type="submit" class="" value="Search" 
+						 name="Search">
+					</div>
+					<div class="col-md-2">
+						<input style="width: 80%" class="btn btn-info btn-md" type="button" onclick="redirect()" value="Load" >
+					</div>
+				
+					<div class="col-md-2">
+						<input style="width: 80%" class="btn btn-warning btn-md" type="reset" value="Clear">
+					</div>
+					<div class="col-md-2">
+						<input style="width: 80%" class="btn btn-danger btn-md" type="button"  value="Cancel">
+					</div>
+					<div class="col-md-2">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+<script type="text/javascript">
+	function redirect(){
+		window.location="uploader.html"
+	}
+</script>
+
+
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
