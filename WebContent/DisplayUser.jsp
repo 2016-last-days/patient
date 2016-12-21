@@ -74,7 +74,7 @@ if(message!=null)
 		<center>
 			<div class="container">
 				<h1>List of Users</h1>
-				<table class="table table-hover">
+				<table class="table table-hover table-bordered" style="background-color:lightblue">
 					<thead>
 						<tr>
 							<th>ID</th>
