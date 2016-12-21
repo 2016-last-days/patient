@@ -58,7 +58,7 @@
 
 
 	<div class="container">
-		<table class="table table-hover" style="background-color: white">
+		<table class="table table-hover table-bordered" style="background-color: white">
 			<caption style="text-align: center; font-size: 30px">
 				<strong>Uploaded Details</strong>
 			</caption>

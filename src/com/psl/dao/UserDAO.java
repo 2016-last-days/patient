@@ -37,11 +37,13 @@ public class UserDAO {
 				String lastName = rSet.getString("Lastname");
 				String role = rSet.getString("Role");
 				String userEmail = rSet.getString("Email");
+				String status = rSet.getString("Status");
 				System.out.println("Welcome " + firstName + " " + lastName + " Role " + role);
 				bean.setEmail(userEmail);
 				bean.setFirstName(firstName);
 				bean.setLastName(lastName);
 				bean.setRole(role);
+				bean.setStatus(status);
 				// bean.setName(name);
 				bean.setValid(true);
 			}

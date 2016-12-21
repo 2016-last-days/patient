@@ -43,14 +43,15 @@ public class LoginServlet extends HttpServlet {
 		     if (user.isValid())
 		     {
 		    	  HttpSession session = request.getSession(true);	    
-		          session.setAttribute("currentSessionUser",user); 
+		          session.setAttribute("currentSessionUser",user);
+		          session.setAttribute("uname", user.getFirstName());
 		          System.out.println();
-			     if(user.getRole().equals("Admin"))
-			    {		          
-		          response.sendRedirect("UserServlet"); //logged-in page
+		          if(user.getRole().equals("Admin"))
+		          {		          
+		          response.sendRedirect("UserServlet"); //logged-in page 
 			      }
 			      else
-			    	  response.sendRedirect("clerk.html");
+			      response.sendRedirect("clerk.html");
 		     }
 			        
 		     else {

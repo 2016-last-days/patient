@@ -69,7 +69,7 @@ preparedStatement.setString(2, lastname);
 ResultSet rSet = preparedStatement.executeQuery();%>
 
 <div class="container">
-<table class="table table-hover" style="background-color:white">
+<table class="table table-hover table-bordered" style="background-color:lightblue">
 <caption style="text-align: center; font-size: 30px"><strong>Patient Details</strong></caption>
     <thead>
       <tr>
